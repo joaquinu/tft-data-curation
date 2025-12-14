@@ -232,7 +232,6 @@ python3 scripts/simulate_multi_week_data.py --weeks 4
 
 - **Full Documentation**: [`workflow/README.md`](../workflow/README.md)
 - **Workflow Architecture**: [`SNAKEMAKE_WORKFLOW_DESIGN.md`](SNAKEMAKE_WORKFLOW_DESIGN.md)
-- **Project Status**: [`no-tracking/current_status.md`](no-tracking/current_status.md)
 - **Documentation Index**: [`DOCUMENTATION_INDEX.md`](DOCUMENTATION_INDEX.md)
 
 

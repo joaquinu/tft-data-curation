@@ -148,7 +148,7 @@ This project demonstrates understanding and application of all required course c
 | **Data Lifecycle** | Full USGS Science Data Lifecycle Model (Plan, Acquire, Process, Analyze, Preserve, Publish/Share) | See "Response to Proposal Feedback" section; all 6 stages implemented |
 | **Ethics/Legal Constraints** | Riot API Terms of Service compliance, privacy considerations, data usage restrictions | See "Ethics and Legal Constraints" section; zero ToS violations |
 | **Metadata Standards** | JSON-LD with Schema.org compliance, Dublin Core terms, FOAF | `scripts/schema.py`, JSON-LD `@context` in all data files |
-| **Workflow Automation** | Snakemake pipeline with 6 rules, cron scheduling, GitHub Actions | `Snakefile`, `workflow/rules/`, `setup_cron.sh` |
+| **Workflow Automation** | Snakemake pipeline with 6 rules, cron scheduling | `Snakefile`, `setup_cron.sh` |
 | **Provenance Tracking** | W3C PROV standard with temporal, error, and dependency tracking | `provenance/workflow_*.prov.json`, `workflow/rules/provenance.smk` |
 | **Reproducibility** | Complete environment specification, step-by-step instructions, parameterized workflows | `requirements.txt`, `README.md`, Snakemake config |
 | **Dissemination** | GitHub repository, comprehensive documentation, data citation guidelines | `README.md`, `Documents/` (30+ files), JSON-LD citation metadata |
