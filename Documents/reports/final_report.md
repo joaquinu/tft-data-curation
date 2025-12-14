@@ -47,8 +47,8 @@ These results demonstrate the feasibility of sustained daily and weekly collecti
 | **Total Players Processed** | ~54,000 unique players (all ranked tiers) |
 | **Data Volume** | 7.1 GB total |
 | **Collection Period** | November 1 – December 8, 2025 |
-| **Tiers Covered** | All 9 (Challenger, Grandmaster, Master, Diamond, Platinum, Gold, Silver, Bronze, Iron) |
-| **Divisions Covered** | All 4 (I, II, III, IV) per applicable tier |
+| **Ranked Tiers** | Complete coverage across all nine competitive tiers: Challenger, Grandmaster, Master, Diamond, Platinum, Gold, Silver, Bronze, and Iron |
+| **Ranked Divisions** | Full division coverage (I through IV) for each tier that supports division-based ranking |
 
 ### Data Formats
 
@@ -83,12 +83,12 @@ License: Academic/Research Use (per Riot API Terms of Service)
 
 | Stage | Timeline | Status | Key Implementation | Primary Evidence |
 |-------|----------|--------|-------------------|------------------|
-| **1. PLAN** | Week 1 | Complete | Data management plan, schema design, quality framework | `Documents/reports/Project_proposal.md`, `config/config.yaml` |
-| **2. ACQUIRE** | Weeks 2-4 | Complete | Automated API collection, rate limiting, 13 successful collections (73K+ matches) | `scripts/automated_collection.py`, DuckDB registry |
-| **3. PROCESS** | Weeks 2-6 | Complete | Multi-layer validation, JSON-LD transformation, deduplication | `quality_assurance/` modules (6 validators) |
-| **4. ANALYZE** | Weeks 5-6, 9-10 | Complete | Analysis-ready formats, Parquet storage, data dictionary | `Documents/DATA_DICTIONARY.md`, `data/parquet/` |
-| **5. PRESERVE** | Weeks 7-8+ | Complete | W3C PROV provenance, Snakemake workflow, automated backups | `provenance/`, `Snakefile`, `scripts/backup_system.py` |
-| **6. PUBLISH/SHARE** | Weeks 11-12 | Complete | GitHub repository, comprehensive documentation, compliance | `README.md`, `Documents/` |
+| **1. Planning & Design** | Week 1 | Complete | Data management plan, schema design, quality framework | `Documents/reports/Project_proposal.md`, `config/config.yaml` |
+| **2. Data Acquisition** | Weeks 2-4 | Complete | Automated API collection, rate limiting, 13 successful collections (73K+ matches) | `scripts/automated_collection.py`, DuckDB registry |
+| **3. Data Processing & Transformation** | Weeks 2-6 | Complete | Multi-layer validation, JSON-LD transformation, deduplication | `quality_assurance/` modules (6 validators) |
+| **4. Analysis Preparation** | Weeks 5-6, 9-10 | Complete | Analysis-ready formats, Parquet storage, data dictionary | `Documents/DATA_DICTIONARY.md`, `data/parquet/` |
+| **5. Long-term Preservation** | Weeks 7-8+ | Complete | W3C PROV provenance, Snakemake workflow, automated backups | `provenance/`, `Snakefile`, `scripts/backup_system.py` |
+| **6. Publication & Sharing** | Weeks 11-12 | Complete | GitHub repository, comprehensive documentation, compliance | `README.md`, `Documents/` |
 
 **Cross-Cutting Elements** implemented throughout all stages:
 - **Describe**: JSON-LD metadata, Schema.org compliance, comprehensive documentation
@@ -145,7 +145,7 @@ This project demonstrates understanding and application of all required course c
 
 | Course Concept | Implementation | Evidence |
 |----------------|----------------|----------|
-| **Data Lifecycle** | Full USGS Science Data Lifecycle Model (Plan, Acquire, Process, Analyze, Preserve, Publish/Share) | See "Response to Proposal Feedback" section; all 6 stages implemented |
+| **Data Lifecycle** | Comprehensive data lifecycle implementation following the USGS framework, encompassing initial design and planning, systematic data collection, multi-stage processing and validation, preparation for analytical use, long-term preservation strategies, and public dissemination | See "Response to Proposal Feedback" section; all 6 stages implemented |
 | **Ethics/Legal Constraints** | Riot API Terms of Service compliance, privacy considerations, data usage restrictions | See "Ethics and Legal Constraints" section; zero ToS violations |
 | **Metadata Standards** | JSON-LD with Schema.org compliance, Dublin Core terms, FOAF | `scripts/schema.py`, JSON-LD `@context` in all data files |
 | **Workflow Automation** | Snakemake pipeline with 6 rules, cron scheduling | `Snakefile`, `setup_cron.sh` |
@@ -162,14 +162,14 @@ This project demonstrates understanding and application of all required course c
 
 ### Progress
 
-| Phase | Planned Weeks | Status | Notes |
-|-------|---------------|--------|-------|
-| Phase 1: Infrastructure | 1 | Completed | Endpoint mapping (`scripts/riot_api_endpoints.py`), rate limiting, JSON-LD schema generation (`scripts/schema.py`) |
-| Phase 2: Collection & Quality | 2–4 | Completed | LA2 collection automated (13 runs); QA modules implemented (`quality_assurance/`) |
-| Phase 3: Metadata & Organization | 5–6 | Completed | DuckDB registry, unified JSON-LD `@context/@type`, reusable configuration (`config/config.yaml`), weekly deduplication logic, identifier/provenance alignment |
-| Phase 4: Workflow & Preservation | 7–8 | Completed | Snakemake workflow with enhanced provenance tracking (temporal, error, dependencies), automated backup system |
-| Phase 5: Automation | 9–10 | Completed | Cron jobs operational, automated collection system deployed |
-| Phase 6: Testing & Publication | 11–12 | Completed | Multi-week testing completed, data dictionary finished, final report submitted |
+| Project Phase | Timeline | Completion Status | Key Deliverables |
+|---------------|---------|-------------------|------------------|
+| Phase 1: Infrastructure | Week 1 | ✓ Finished | Endpoint mapping (`scripts/riot_api_endpoints.py`), rate limiting, JSON-LD schema generation (`scripts/schema.py`) |
+| Phase 2: Collection & Quality | Weeks 2–4 | ✓ Finished | LA2 collection automated (13 runs); QA modules implemented (`quality_assurance/`) |
+| Phase 3: Metadata & Organization | Weeks 5–6 | ✓ Finished | DuckDB registry, unified JSON-LD `@context/@type`, reusable configuration (`config/config.yaml`), weekly deduplication logic, identifier/provenance alignment |
+| Phase 4: Workflow & Preservation | Weeks 7–8 | ✓ Finished | Snakemake workflow with enhanced provenance tracking (temporal, error, dependencies), automated backup system |
+| Phase 5: Automation | Weeks 9–10 | ✓ Finished | Cron jobs operational, automated collection system deployed |
+| Phase 6: Testing & Publication | Weeks 11–12 | ✓ Finished | Multi-week testing completed, data dictionary finished, final report submitted |
 
 **Decisions and Scope Adjustments**: JSON remains primary exchange format with Parquet optimization implemented; LA2 collection prioritized; LA1 infrastructure ready but deferred pending API quota assessment.
 
