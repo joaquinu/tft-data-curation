@@ -385,3 +385,17 @@ snakemake --cores 8 --config collection_date=20251101
 
 For detailed instructions, see `README.md` and `Documents/SNAKEMAKE_WORKFLOW_USAGE.md`.
 
+---
+
+## Submission Artifacts
+
+### Artifact Archive
+
+A comprehensive artifact archive containing all project deliverables, code, documentation, and data samples is available at:
+
+**University of Illinois Box**: [https://uofi.box.com/s/tglg5yeccot73zn1bah9z7m23zaci0do](https://uofi.box.com/s/tglg5yeccot73zn1bah9z7m23zaci0do)
+
+This archive includes data, logs and reports. For Code and Documentation visit the [GitHub Repository](https://github.com/joaquinu/tft-data-curation)
+
+**Note**: Access requires University of Illinois Box credentials. For public access, see the GitHub repository: [https://github.com/joaquinu/tft-data-curation](https://github.com/joaquinu/tft-data-curation)
+
