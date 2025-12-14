@@ -2,8 +2,6 @@
 
 **A comprehensive data curation pipeline for Teamfight Tactics (TFT) match data from Riot Games API**
 
-[![Status](https://img.shields.io/badge/Status-100%25%20Complete-success)](Documents/current_status.md)
-[![Timeline](https://img.shields.io/badge/Timeline-4%20weeks%20ahead-success)](Documents/gantt.md)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](requirements.txt)
 [![License](https://img.shields.io/badge/License-Academic%20Use-green)]()
 
@@ -108,9 +106,8 @@ tft-data-extraction/
 │   ├── config.yaml           # Main configuration
 │   └── snakemake_config.yaml # Workflow configuration
 ├── Documents/                 # Comprehensive documentation (30+ files)
-│   ├── current_status.md     # Project status (538 lines)
 │   ├── final_report.md       # Complete project report
-│   ├── SNAKEMAKE_IMPLEMENTATION_GUIDE.md
+│   ├── SNAKEMAKE_WORKFLOW_DESIGN.md
 │   ├── EMAIL_NOTIFICATION_SETUP.md
 │   └── ...
 ├── data/                      # Data output directories
@@ -164,16 +161,15 @@ tft-data-extraction/
 
 - **[User Guide](Documents/USER_GUIDE.md)** - **Start Here!** Comprehensive guide for all users
 - **[Script Documentation](Documents/SCRIPT_DOCUMENTATION.md)** - **Complete script reference** - Purpose, usage, inputs, and outputs for all scripts
-- **[Current Status](Documents/current_status.md)** - Comprehensive project status (538 lines)
 - **[Final Report](Documents/reports/final_report.md)** - Complete project report with lifecycle implementation
-- **[Gantt Chart](Documents/gantt.md)** - Detailed timeline and progress tracking
 
 ### Quick Start Guides
 
 - **[Workflow README](workflow/README.md)** - Snakemake workflow usage guide (871 lines)
-- **[Snakemake Implementation Guide](Documents/SNAKEMAKE_IMPLEMENTATION_GUIDE.md)** - Detailed implementation (783 lines)
+- **[Snakemake Workflow Design](Documents/SNAKEMAKE_WORKFLOW_DESIGN.md)** - Detailed workflow architecture and design
+- **[Snakemake Workflow Usage](Documents/SNAKEMAKE_WORKFLOW_USAGE.md)** - Practical usage guide and examples
 - **[Email Notification Setup](Documents/EMAIL_NOTIFICATION_SETUP.md)** - Email system setup
-- **[Backup System](Documents/BACKUP_SYSTEM.md)** - Backup system documentation (482 lines)
+- **[Backup System Manual](Documents/BACKUP_SYSTEM_MANUAL.md)** - Backup system documentation
 
 ### Technical Documentation
 
@@ -184,8 +180,8 @@ tft-data-extraction/
 
 ### Verification Reports
 
-- **[Phase 4 Verification](Documents/PHASE4_VERIFICATION_REPORT.md)** - Workflow integration verification
-- **[Phase 5 Verification](Documents/PHASE5_VERIFICATION_REPORT.md)** - Automation verification
+- **[All Phases Verification](Documents/no-tracking/ALL_PHASES_VERIFICATION_AND_SUMMARIES.md)** - Complete verification summary for all project phases
+- **[Workflow Integration Test Results](Documents/no-tracking/WORKFLOW_INTEGRATION_TEST_RESULTS.md)** - Workflow integration test execution results
 - **[Backup Validation](Documents/BACKUP_VALIDATION_REPORT.md)** - Backup system validation
 
 ### Project Documentation
@@ -408,10 +404,8 @@ This project is for academic and research purposes. Commercial use requires sepa
 ## Quick Links
 
 - 📖 [Script Documentation](Documents/SCRIPT_DOCUMENTATION.md) - **Complete reference for all scripts**
-- 📊 [Current Status](Documents/current_status.md)
-- 📈 [Gantt Chart](Documents/gantt.md)
 - 📝 [Final Report](Documents/reports/final_report.md)
 - 🔧 [Workflow Guide](workflow/README.md)
 - 📧 [Email Setup](Documents/EMAIL_NOTIFICATION_SETUP.md)
-- 💾 [Backup System](Documents/BACKUP_SYSTEM.md)
+- 💾 [Backup System](Documents/BACKUP_SYSTEM_MANUAL.md)
 - 📚 [Data Dictionary](Documents/DATA_DICTIONARY.md)

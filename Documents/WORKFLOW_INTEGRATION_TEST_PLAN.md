@@ -216,8 +216,8 @@ python3 scripts/test_workflow_integration.py --dates 20251101,20251102,20251103,
 5. Generates comprehensive test report
 
 **Output**:
-- `Documents/WORKFLOW_INTEGRATION_TEST_RESULTS.md` (human-readable report)
-- `Documents/WORKFLOW_INTEGRATION_TEST_RESULTS.json` (machine-readable results)
+- `Documents/no-tracking/WORKFLOW_INTEGRATION_TEST_RESULTS.md` (human-readable report)
+- `Documents/no-tracking/WORKFLOW_INTEGRATION_TEST_RESULTS.json` (machine-readable results)
 
 ### Manual Testing
 
@@ -311,21 +311,6 @@ python3 scripts/test_workflow_integration.py --dates 20251101,20251102,20251103,
 
 ---
 
-## Test Results Documentation
-
-After test execution, document results in:
-- `Documents/WORKFLOW_INTEGRATION_TEST_RESULTS.md`
-
-Include:
-- Test execution timestamp
-- Test dates used
-- Pass/fail status for each scenario
-- Detailed output verification results
-- Any issues encountered
-- Performance metrics
-- Recommendations for improvements
-
----
 
 ## Next Steps
 

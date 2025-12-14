@@ -660,7 +660,6 @@ The workflow is validated using a comprehensive integration test suite defined i
 The latest test results confirm the stability and correctness of the workflow.
 
 - **Status**: PASSED
-- **Report**: [`WORKFLOW_INTEGRATION_TEST_RESULTS.md`](WORKFLOW_INTEGRATION_TEST_RESULTS.md)
 
 ### 6.3 Ongoing Validation
 To validate changes to the workflow:

@@ -992,10 +992,9 @@ snakemake --cores 4 --config collection_date=20251027
 ## References
 
 - **Snakemake Documentation**: https://snakemake.readthedocs.io/
-- **Implementation Guide**: `Documents/SNAKEMAKE_IMPLEMENTATION_GUIDE.md`
-- **Workflow Status**: `Documents/SNAKEMAKE_WORKFLOW_STATUS.md`
-- **Test Results**: `Documents/SNAKEMAKE_WORKFLOW_TEST_RESULTS.md`
-- **Validation**: `Documents/SNAKEMAKE_VALIDATION.md`
+- **Workflow Design**: `Documents/SNAKEMAKE_WORKFLOW_DESIGN.md` - Detailed architecture and design
+- **Workflow Usage**: `Documents/SNAKEMAKE_WORKFLOW_USAGE.md` - Practical usage guide
+- **Test Results**: `Documents/no-tracking/WORKFLOW_INTEGRATION_TEST_RESULTS.md` - Integration test results
 
 ---
 
@@ -1005,7 +1004,8 @@ For issues or questions:
 1. Check troubleshooting section above
 2. Review workflow logs in `logs/` directory
 3. Check validation reports in `reports/` directory
-4. Review implementation guide: `Documents/SNAKEMAKE_IMPLEMENTATION_GUIDE.md`
+4. Review workflow design: `Documents/SNAKEMAKE_WORKFLOW_DESIGN.md`
+5. Review usage guide: `Documents/SNAKEMAKE_WORKFLOW_USAGE.md`
 
 ---
 

@@ -81,7 +81,7 @@ If you are setting up or maintaining the system infrastructure.
 
 ### 2. System Configuration
 *   **[Email Notification Setup](EMAIL_NOTIFICATION_SETUP.md)**: Configure SMTP settings for automated alerts.
-*   **[Backup System Documentation](BACKUP_SYSTEM.md)**: Manage retention policies and recovery procedures.
+*   **[Backup System Documentation](BACKUP_SYSTEM_MANUAL.md)**: Manage retention policies and recovery procedures.
 
 ### 3. Maintenance
 *   **Logs**: Check `logs/` for detailed execution logs.
@@ -141,7 +141,7 @@ Use this after running a new Cross-Cycle Validation to ensure the health report 
 *   [SNAKEMAKE_WORKFLOW_USAGE.md](SNAKEMAKE_WORKFLOW_USAGE.md) - Usage Examples
 *   [setup_cron.sh](../scripts/setup_cron.sh) - Automation Script
 *   [EMAIL_NOTIFICATION_SETUP.md](EMAIL_NOTIFICATION_SETUP.md) - Notification Setup
-*   [BACKUP_SYSTEM.md](BACKUP_SYSTEM.md) - Backup System
+*   [BACKUP_SYSTEM_MANUAL.md](BACKUP_SYSTEM_MANUAL.md) - Backup System
 
 ### Project Tracking
 *   [Status Dashboard](reports/status_dashboard.md)
