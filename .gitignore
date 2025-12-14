@@ -1,0 +1,52 @@
+# Environment Variables
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Project Specific - Data (Large files)
+data/raw/
+data/validated/
+data/transformed/
+data/parquet/
+data/final/
+data/temp/
+backups/
+archives/
+
+# Snakemake
+.snakemake/
+
+# Database
+identifier_registry.duckdb
+identifier_registry.duckdb.wal
+
+# Logs
+logs/
+reports/cross_cycle_*.json
+reports/quality_*.json
+reports/validation_*.json
+provenance/workflow_*.prov.json
