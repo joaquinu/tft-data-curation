@@ -39,8 +39,7 @@
 | **Script Documentation** | `SCRIPT_DOCUMENTATION.md` | Detailed reference for all Python scripts. |
 | **Workflow Architecture** | `SNAKEMAKE_WORKFLOW_DESIGN.md` | Core architecture of the pipeline rules. |
 | **Data Dictionary** | `DATA_DICTIONARY.md` | Schema definitions and field explanations. |
-| **Identifiers** | `IDENTIFIERS_AND_SYSTEMS_KNOWLEDGE.md` | Explanation of ID systems (PUUID, MatchID). |
-| **Identifier Spec** | `IDENTIFIER_SYSTEM_SPECIFICATION.md` | Technical specification of ID canonicalization. |
+| **Identifier System** | `IDENTIFIER_SYSTEM_SPECIFICATION.md` | Complete specification: theoretical background, ID schemes (PUUID, MatchID), and canonicalization. |
 | **API Reference** | `../scripts/riot_api_endpoints.py` | (Code) API endpoint definitions. |
 
 ### Provenance & Lifecycle
