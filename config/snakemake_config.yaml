@@ -1,0 +1,35 @@
+# TFT Data Curation Workflow SnakemakeConfiguration
+
+# API Configuration
+api:
+  region: "la2"  # la2 or la1
+  rate_limit: 100  # requests per 2 minutes
+  
+# Collection Configuration
+collection:
+  mode: "weekly"  # weekly or incremental (script only accepts these values)
+  tiers: ["DIAMOND", "PLATINUM", "GOLD", "SILVER", "BRONZE", "IRON"]
+  output_dir: "data/raw"
+  
+quality:
+  validation_enabled: true
+  anomaly_detection: true
+  quality_threshold: 0.8
+  
+provenance:
+  enabled: true
+  format: "w3c_prov"
+  output_dir: "provenance"
+
+# Collection Date (can be overridden via --config collection_date=YYYYMMDD)
+collection_date: ["20251027"]
+
+# Backup Configuration
+backup:
+  enabled: true
+  type: "incremental"  # full, incremental, differential
+  retention_days: 730  # 2 years
+  verify_integrity: true
+  compression: "gzip"
+  compression_level: 6
+  auto_backup: true

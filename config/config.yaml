@@ -1,0 +1,173 @@
+# TFT Data Collection Configuration
+# ==================================
+# Main configuration file for the TFT data collection pipeline.
+# Supports daily, weekly, monthly collection periods.
+
+# Global Configuration
+# ====================
+global:
+  # API Configuration
+  api:
+    key: ${RIOT_API_KEY}
+    region: LA2
+    base_url: https://la2.api.riotgames.com
+    timeout: 30
+    max_retries: 3
+    backoff_factor: 1.5
+    
+  # Rate Limiting (Riot API Limits)
+  rate_limiting:
+    requests_per_second: 20
+    requests_per_2min: 100
+    
+  # Output directories
+  paths:
+    data_dir: ./data
+    backups_dir: ./backups
+    logs_dir: ./logs
+    reports_dir: ./reports
+    
+  # Logging
+  logging:
+    level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    retention_days: 90
+
+  # Email notifications
+  notifications:
+    enabled: true
+    email:
+      smtp_server: smtp.sendgrid.net
+      smtp_port: 587
+      use_tls: true
+      from_address: ugarte.joaquin@gmail.com
+      to_addresses:
+        - ugarte.joaquin@gmail.com
+      username: apikey
+      password: ${EMAIL_PASSWORD}
+    thresholds:
+      error_count: 10
+      quality_score: 70
+      critical_errors: true
+
+# Collection Period Definitions
+# =============================
+collection_periods:
+
+  # Daily Collection
+  daily:
+    enabled: true
+    schedule: "0 2 * * *"
+    description: "Daily collection of all LA2 ranked matches"
+    
+    parameters:
+      max_players: -1
+      tiers: ["CHALLENGER", "GRANDMASTER", "MASTER", "DIAMOND", "PLATINUM", "GOLD", "SILVER", "BRONZE", "IRON"]
+      divisions: ["I", "II", "III", "IV"]
+      match_history_depth: "unbounded"
+      
+    collection_config:
+      timeout: 14400
+      max_api_calls: 500
+      
+    validation:
+      min_matches: 1000
+      quality_check: true
+      schema_validation: true
+      duplicate_check: true
+      
+    preservation:
+      backup: false
+      retention: "7 days"
+      
+    notifications:
+      on_error: true
+      on_success: false
+
+  # Weekly Collection (DEFAULT)
+  weekly:
+    enabled: true
+    schedule: "0 0 * * 0"
+    description: "Weekly collection of all LA2 ranked matches"
+    
+    parameters:
+      max_players: -1
+      tiers: ["CHALLENGER", "GRANDMASTER", "MASTER", "DIAMOND", "PLATINUM", "GOLD", "SILVER", "BRONZE", "IRON"]
+      divisions: ["I", "II", "III", "IV"]
+      regions: [LA2]
+      match_history_depth: "unbounded"
+      quality_threshold: 80
+      deduplication: true
+      
+    collection_config:
+      timeout: 28800
+      max_api_calls: 100
+      
+    validation:
+      min_matches: 1000
+      quality_check: true
+      schema_validation: true
+      duplicate_check: true
+      cross_cycle_validation: true
+      
+    preservation:
+      backup: true
+      retention: "730 days"
+      
+    notifications:
+      on_error: true
+      on_success: true
+
+  # Monthly Collection
+  monthly:
+    enabled: false
+    schedule: "0 1 1 * *"
+    description: "Monthly multi-region collection"
+    
+    parameters:
+      max_players: -1
+      tiers: ["CHALLENGER", "GRANDMASTER", "MASTER", "DIAMOND", "PLATINUM", "GOLD", "SILVER", "BRONZE", "IRON"]
+      divisions: ["I", "II", "III", "IV"]
+      regions: [LA2, LA1]
+      match_history_depth: "unbounded"
+      quality_threshold: 75
+      deduplication: true
+      
+    collection_config:
+      timeout: 86400
+      max_api_calls: 100
+      
+    validation:
+      min_matches: 1000
+      quality_check: true
+      schema_validation: true
+      duplicate_check: true
+      cross_cycle_validation: true
+      
+    preservation:
+      backup: true           # Full backup for archival
+      version_tracking: true
+      compression: true
+      retention: "permanent"
+      
+    notifications:
+      on_error: true
+      on_success: true
+
+# Backup Configuration
+# ====================
+preservation:
+  backup:
+    enabled: true
+    strategy: "incremental"  # full, incremental, differential
+    compression: "gzip"
+    compression_level: 6
+
+# Quality Assurance
+# =================
+quality_assurance:
+  thresholds:
+    min_quality_score: 80
+    min_matches: 1000
+    min_player_diversity: 100
+    max_duplicates_percent: 5
