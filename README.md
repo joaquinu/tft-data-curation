@@ -9,7 +9,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Quick Start](#quick-start)
@@ -129,7 +129,7 @@ tft-data-extraction/
 
 ## Features
 
-### ✅ Core Features
+### Core Features
 
 - **Multi-Tier Collection**: Collects data from all ranked tiers (Challenger to Iron)
 - **Rate Limiting**: Advanced rate limiting with proactive 2-minute checks
@@ -138,7 +138,7 @@ tft-data-extraction/
 - **Deduplication**: Match deduplication to minimize API calls
 - **Provenance Tracking**: W3C PROV compliant provenance with temporal, error, and dependency tracking
 
-### ✅ Workflow Features
+### Workflow Features
 
 - **Snakemake Pipeline**: Reproducible workflow with 6 rule files
 - **Parameterization**: Flexible date-based and weekly collection modes
@@ -148,7 +148,7 @@ tft-data-extraction/
 - **Parquet Storage**: Columnar format for efficient analysis (matches.parquet, participants.parquet)
 - **Cross-Cycle Validation**: Historical trend analysis and player retention tracking
 
-### ✅ Automation Features
+### Automation Features
 
 - **Cron Scheduling**: Weekly automated collections
 - **Email Notifications**: SMTP email alerts and summaries
@@ -160,7 +160,7 @@ tft-data-extraction/
 
 ## Documentation
 
-### 📚 Main Documentation
+### Main Documentation
 
 - **[User Guide](Documents/USER_GUIDE.md)** - **Start Here!** Comprehensive guide for all users
 - **[Script Documentation](Documents/SCRIPT_DOCUMENTATION.md)** - **Complete script reference** - Purpose, usage, inputs, and outputs for all scripts
@@ -168,27 +168,27 @@ tft-data-extraction/
 - **[Final Report](Documents/reports/final_report.md)** - Complete project report with lifecycle implementation
 - **[Gantt Chart](Documents/gantt.md)** - Detailed timeline and progress tracking
 
-### 🚀 Quick Start Guides
+### Quick Start Guides
 
 - **[Workflow README](workflow/README.md)** - Snakemake workflow usage guide (871 lines)
 - **[Snakemake Implementation Guide](Documents/SNAKEMAKE_IMPLEMENTATION_GUIDE.md)** - Detailed implementation (783 lines)
 - **[Email Notification Setup](Documents/EMAIL_NOTIFICATION_SETUP.md)** - Email system setup
 - **[Backup System](Documents/BACKUP_SYSTEM.md)** - Backup system documentation (482 lines)
 
-### 📖 Technical Documentation
+### Technical Documentation
 
 - **[Script Documentation](Documents/SCRIPT_DOCUMENTATION.md)** - Complete reference for all scripts (purpose, usage, inputs, outputs)
 - **[Data Dictionary](Documents/DATA_DICTIONARY.md)** - Complete field-level documentation
 - **[Operational Strategy](Documents/OPERATIONAL_STRATEGY.md)** - Operational procedures
 - **[API Documentation](scripts/riot_api_endpoints.py)** - Embedded in code with docstrings
 
-### 📊 Verification Reports
+### Verification Reports
 
 - **[Phase 4 Verification](Documents/PHASE4_VERIFICATION_REPORT.md)** - Workflow integration verification
 - **[Phase 5 Verification](Documents/PHASE5_VERIFICATION_REPORT.md)** - Automation verification
 - **[Backup Validation](Documents/BACKUP_VALIDATION_REPORT.md)** - Backup system validation
 
-### 📋 Project Documentation
+### Project Documentation
 
 - **[Project Proposal](Documents/Project_proposal.md)** - Original project proposal
 - **[Progress Report](Documents/progress_report.md)** - Progress tracking

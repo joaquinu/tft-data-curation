@@ -78,7 +78,6 @@ If you are setting up or maintaining the system infrastructure.
 
 ### 1. Automation Setup
 *   **Cron Configuration**: Run `scripts/setup_cron.sh` to generate the crontab entries for the Hybrid Daily scheme.
-*   **[GitHub Actions](../.github/workflows/weekly-collection.yml)**: Cloud-based scheduling configuration.
 
 ### 2. System Configuration
 *   **[Email Notification Setup](EMAIL_NOTIFICATION_SETUP.md)**: Configure SMTP settings for automated alerts.

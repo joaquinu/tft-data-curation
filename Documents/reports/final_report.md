@@ -168,7 +168,7 @@ This project demonstrates understanding and application of all required course c
 | Phase 2: Collection & Quality | 2–4 | Completed | LA2 collection automated (13 runs); QA modules implemented (`quality_assurance/`) |
 | Phase 3: Metadata & Organization | 5–6 | Completed | DuckDB registry, unified JSON-LD `@context/@type`, reusable configuration (`config/config.yaml`), weekly deduplication logic, identifier/provenance alignment |
 | Phase 4: Workflow & Preservation | 7–8 | Completed | Snakemake workflow with enhanced provenance tracking (temporal, error, dependencies), automated backup system |
-| Phase 5: Automation | 9–10 | Completed | Cron jobs and GitHub Actions operational, automated collection system deployed |
+| Phase 5: Automation | 9–10 | Completed | Cron jobs operational, automated collection system deployed |
 | Phase 6: Testing & Publication | 11–12 | Completed | Multi-week testing completed, data dictionary finished, final report submitted |
 
 **Decisions and Scope Adjustments**: JSON remains primary exchange format with Parquet optimization implemented; LA2 collection prioritized; LA1 infrastructure ready but deferred pending API quota assessment.
