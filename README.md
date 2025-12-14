@@ -49,8 +49,8 @@ This project implements a comprehensive data curation pipeline for collecting, v
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd tft-data-extraction
+git clone https://github.com/joaquinu/tft-data-curation.git
+cd tft-data-curation
 
 # Install dependencies
 pip install -r requirements.txt
@@ -200,8 +200,8 @@ tft-data-extraction/
 
 ```bash
 # 1. Clone repository
-git clone <repository-url>
-cd tft-data-extraction
+git clone https://github.com/joaquinu/tft-data-curation.git
+cd tft-data-curation
 
 # 2. Install Python dependencies
 pip install -r requirements.txt

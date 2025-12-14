@@ -67,7 +67,7 @@ These results demonstrate the feasibility of sustained daily and weekly collecti
 ```text
 TFT Match Data Collection, LA2 Region (2025). 
 Collected via Riot Games TFT API. 
-Available at: [repository-url] (to be added upon publication)
+Available at: https://github.com/joaquinu/tft-data-curation.git
 License: Academic/Research Use (per Riot API Terms of Service)
 ```
 
@@ -372,7 +372,7 @@ This project includes comprehensive documentation. Full script documentation is 
 
 ```bash
 # 1. Clone and setup
-git clone [repository-url]
+git clone https://github.com/joaquinu/tft-data-curation.git
 python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 
