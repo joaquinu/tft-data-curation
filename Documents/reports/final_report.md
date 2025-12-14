@@ -314,15 +314,15 @@ Riot Games. (2024). *Teamfight Tactics API documentation*. [https://developer.ri
 
 Schema.org Community Group. (2024). *Schema.org*. [https://schema.org/](https://schema.org/)
 
-Project Proposal. (2025). *Curating Riot's TFT match data: A reproducible data workflow project*. [Internal document]
+Ugarte, J. (2025). *Curating Riot's TFT match data: A reproducible data workflow project*. [Project Proposal](Project_proposal.md). GitHub: [https://github.com/joaquinu/tft-data-curation](https://github.com/joaquinu/tft-data-curation)
 
-Lynch, C. (1999). *Canonicalization: A Fundamental Tool to Facilitate Preservation and Management of Digital Information*. D-Lib Magazine, 5(9). [http://www.dlib.org/dlib/september99/lynch/09lynch.html](http://www.dlib.org/dlib/september99/lynch/09lynch.html)
+Lynch, C. (1999). *Canonicalization: A Fundamental Tool to Facilitate Preservation and Management of Digital Information*. D-Lib Magazine, 5(9). [https://www.dlib.org/dlib/september99/09lynch.html](https://www.dlib.org/dlib/september99/09lynch.html)
 
 Duerr, R. E., et al. (2011). *On the Utility of Identification Schemes for Digital Earth Science Data*. Earth Science Informatics, 4, 139–160. [https://doi.org/10.1007/s12145-011-0083-6](https://doi.org/10.1007/s12145-011-0083-6)
 
-Gil, Y. (2017). *Identifiers and Identifier Systems*. CS598-FDC Lecture.
+Gil, Y. (2017). *Identifiers and Identifier Systems*. CS598-FDC Lecture (Foundations of Data Curation). [Course lecture material - not publicly available]
 
-Kunze, J. (2002). *A Metadata Kernel for Electronic Permanence*. Journal of Digital Information, 2(2). [https://jodi.tamu.edu/index.php/jodi/article/view/36](https://jodi.tamu.edu/index.php/jodi/article/view/36)
+Kunze, J. A. (2002). *A Metadata Kernel for Electronic Permanence*. Journal of Digital Information, 2(2). [https://dcpapers.dublincore.org/article/952106562](https://dcpapers.dublincore.org/article/952106562)
 
 USGS Data Management. (2024). *USGS Science Data Lifecycle Model*. [https://www.usgs.gov/data-management/data-lifecycle](https://www.usgs.gov/data-management/data-lifecycle)
 
