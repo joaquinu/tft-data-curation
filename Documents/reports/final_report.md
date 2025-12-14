@@ -397,5 +397,5 @@ A comprehensive artifact archive containing all project deliverables, code, docu
 
 This archive includes data, logs and reports. For Code and Documentation visit the [GitHub Repository](https://github.com/joaquinu/tft-data-curation)
 
-**Note**: Access requires University of Illinois Box credentials. For public access, see the GitHub repository: [https://github.com/joaquinu/tft-data-curation](https://github.com/joaquinu/tft-data-curation)
+**Note**: Access requires University of Illinois Box credentials. For public access, see the GitHub repository: [TFT Match Data Curation](https://github.com/joaquinu/tft-data-curation)
 
