@@ -14,12 +14,12 @@ Key achievements:
 
 | Category | Achievement | Evidence |
 |----------|-------------|----------|
-| **Data Collection** | 13 successful LA2 collections: 73,121 matches, ~54,000 players, 7.1 GB | [`data/raw/`](../../data/raw/), [`scripts/automated_collection.py`](../../scripts/automated_collection.py) |
+| **Data Collection** | 13 successful LA2 collections: 73,121 matches, ~54,000 players, 7.1 GB | `data/raw/`, [`scripts/automated_collection.py`](../../scripts/automated_collection.py) |
 | **Deduplication** | DuckDB registry achieving 25-50% API call reduction | [`identifier_registry.duckdb`](../../identifier_registry.duckdb) |
 | **Metadata & Provenance** | JSON-LD with Schema.org, W3C PROV tracking | [`provenance/`](../../provenance/), [`scripts/schema.py`](../../scripts/schema.py) |
 | **Workflow** | Snakemake pipeline with 6 rules, checkpoint/resume | [`Snakefile`](../../Snakefile), [`workflow/`](../../workflow/) |
 | **Quality Assurance** | 6-module validation, cross-cycle checks, error trend analysis | [`quality_assurance/`](../../quality_assurance/), [`scripts/error_trend_analysis.py`](../../scripts/error_trend_analysis.py) |
-| **Storage** | Parquet columnar format for analysis | [`data/parquet/`](../../data/parquet/), [`scripts/convert_to_parquet.py`](../../scripts/convert_to_parquet.py) |
+| **Storage** | Parquet columnar format for analysis | `data/parquet/`, [`scripts/convert_to_parquet.py`](../../scripts/convert_to_parquet.py) |
 | **Documentation** | Data dictionary, user guides, script docs | [`DATA_DICTIONARY.md`](../DATA_DICTIONARY.md), [`SCRIPT_DOCUMENTATION.md`](../SCRIPT_DOCUMENTATION.md) |
 
 *Scope adjustment*: LA1 collection infrastructure ready but deferred pending API quota or personal token from Riot.
